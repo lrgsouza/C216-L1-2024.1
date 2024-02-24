@@ -1,0 +1,11 @@
+{
+  "name": "pratica-0",
+  "version": "1.0.0",
+  "description": "Projeto de exemplo para o C216-L1",
+  "main": "index.js",
+  "scripts": {
+    "test": "Não há testes configurados"
+  },
+  "author": "Lucas GES134",
+  "license": "ISC"
+}
