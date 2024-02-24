@@ -79,7 +79,7 @@ Exemplo de uso do npm:
 
 ```bash
 npm init
-npm install restify --save
+# Ao seguir poucos passos, um projeto em node será iniciado.
 ```
 O arquivo package.json será automaticamente criado.
 ```json
@@ -95,7 +95,13 @@ O arquivo package.json será automaticamente criado.
   "license": "ISC"
 }
 ```
-
+Para instalar dependências utilizamos:
+```bash
+npm install [dependency-name]
+# Exemplo da instalação do restify
+npm install restify --save
+```
+A dependêcia será instalada e adicionada ao package.json
 ### 3. Operações de I/O Assíncronas
 O Node.js é conhecido por sua capacidade de realizar operações de I/O de forma assíncrona e não bloqueante, o que o torna eficiente para aplicativos que lidam com muitas operações de I/O.
 
