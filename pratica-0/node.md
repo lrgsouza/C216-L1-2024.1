@@ -31,7 +31,7 @@ Se estiver usando o Visual Studio Code, você precisará fechar e vscode o termi
 ### Uso do NVM
 - Para listar todas as versões disponíveis do Node.js:
   ```bash
-  nvm ls-remote
+  nvm list available
   ```
 
 - Para instalar uma versão específica do Node.js: (Usaremos a versão 16)
