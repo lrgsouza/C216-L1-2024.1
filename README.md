@@ -5,6 +5,9 @@
 - [node.js](./pratica-0/node.md)
 - [Exercício proposto](./pratica-0/exercicio-proposto.md)
 
+## [Prática-1](./pratica-1/) - Middleware com restify.js
+- [Middleware](./pratica-1/middleware.md)
+
 
 ## Documentações adicionais
 
