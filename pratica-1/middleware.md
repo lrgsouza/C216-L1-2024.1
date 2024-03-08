@@ -126,7 +126,10 @@ node_modules/
 ```
 ### Isso fará com que o os arquivos do *_node_modules_* não sejam enviados ao git.
 ---
-# BÔNUS: Quem executar o projeto com docker, terá 50 pontos extras. 
+# BÔNUS: Quem executar o projeto com docker, terá 50 pontos extras.
+```
+docker-compose up --build
+``` 
 (tirar print e colocar na pasta img com o nome docker.png)
 
 [Voltar ao início](../README.md)
