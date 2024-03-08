@@ -68,7 +68,7 @@ function helloWorld(req, res, next) {
 // rota configurada para a função helloWorld
 server.get('/api/v1/hello', helloWorld );
 
-// rota configurada com parametros passador na rota
+// rota configurada para homepage com html
 server.get('/', function(req, res, next) {
     var name = '[NOME] - [SUA MATRICULA]';
     // Definir o cabeçalho de resposta como HTML
@@ -126,7 +126,7 @@ node_modules/
 ```
 ### Isso fará com que o os arquivos do *_node_modules_* não sejam enviados ao git.
 ---
-# BÔNUS: Quem executar o projeto com docker, terá 50 pontos extras.
+# BÔNUS: Quem executar o projeto com docker, terá 5 pontos extras.
 ```
 docker-compose up --build
 ``` 
