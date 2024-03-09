@@ -3,7 +3,7 @@
 ## 1 - Criar o repositorio no GitHub
 Usar o padrão abaixo para criar o repositório
 ```
-S216-L1-[SUA-MATRICULA] exemplo: S216-L1-GES134
+C216-L1-[SUA-MATRICULA] exemplo: C216-L1-GES134
 ```
 Podem usar meu repositorio como exemplo.
 
