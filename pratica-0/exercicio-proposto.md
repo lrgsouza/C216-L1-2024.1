@@ -9,7 +9,7 @@ Podem usar meu repositorio como exemplo.
 
 ## 2 - Clonar o repositório no seu computador
 ```
-git clone https://github.com/[SEU-USERNAME]/S216-L1-[SUA-MATRICULA].git
+git clone https://github.com/[SEU-USERNAME]/C216-L1-[SUA-MATRICULA].git
 ```
 ## 3 - Instalar o Nvm no seu computador e com o nvm instalar o node 16
 [Documentação](./node.md)
