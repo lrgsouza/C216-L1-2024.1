@@ -36,7 +36,7 @@ Para mais informações sobre o restify acesse a documentação oficial:
 ## 02 - instalar as dependencias utilizando npm
 No terminal execute o seguinte:
 ```bash
-cd ./pratica-1
+cd ./aulas/pratica-1
 npm install
 ```
 Isso fará com que todas as dependências do projeto sejam instaladas.
@@ -132,4 +132,4 @@ docker-compose up --build
 ``` 
 (tirar print e colocar na pasta img com o nome docker.png)
 
-[Voltar ao início](../README.md)
+[Voltar ao início](../../README.md)

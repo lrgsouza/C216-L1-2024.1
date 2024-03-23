@@ -202,4 +202,4 @@ client.end();
 Esses são exemplos básicos de como você pode utilizar as bibliotecas `mysql2` para MySQL e `pg` para PostgreSQL em JavaScript para realizar consultas e interagir com bancos de dados. Certifique-se de substituir as informações de conexão (como host, usuário, senha, etc.) pelos valores corretos para o seu ambiente.
 
 ---
-[Voltar ao início](../README.md)
+[Voltar ao início](../../README.md)
