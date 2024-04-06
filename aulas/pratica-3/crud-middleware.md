@@ -139,7 +139,6 @@ Este exercício permitirá que você pratique a criação de endpoints RESTful p
 
 
 # OBSERVAÇÃO IMPORTANTE
----
 ## O PROJETO DEVERÁ SER EXECUTADO USANDO DOCKER!!!
 ```
 cd backend
