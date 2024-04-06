@@ -1,7 +1,7 @@
 {
-  "name": "pratica-2",
+  "name": "pratica-3",
   "version": "1.0.0",
-  "description": "Middleware com restify.js",
+  "description": "Crud com restify.js",
   "main": "index.js",
   "scripts": {
     "start": "node src/index.js",
