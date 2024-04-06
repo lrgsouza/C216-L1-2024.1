@@ -2,11 +2,8 @@ const restify = require('restify');
 
 // iniciar o servidor
 var server = restify.createServer({
-    name: 'pratica-2',
+    name: 'pratica-3',
 });
-
-// configurar o servidor para aceitar JSON e query
-server.use(restify.plugins.bodyParser());
 
 // Array para armazenar os alunos
 let alunos = [];
