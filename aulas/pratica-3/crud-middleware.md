@@ -21,7 +21,7 @@ const restify = require('restify');
 
 // iniciar o servidor
 var server = restify.createServer({
-    name: 'pratica-2',
+    name: 'pratica-3',
 });
 
 // configurar o servidor para aceitar JSON e query
