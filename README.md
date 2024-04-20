@@ -14,6 +14,9 @@
 ## [Prática-3](./aulas/pratica-3/) - Preparando um Middleware para CRUD
 - [CRUD Middleware](./aulas/pratica-3/crud-middleware.md)
 
+## [Prática-4](./aulas/pratica-4/) - CRUD com postgreSQL
+- [CRUD PostgreSQL](./aulas/pratica-4/crud-postgresql.md)
+
 # SERVICES
 ### [Backend](./backend/) - Backend API service
 
