@@ -1,14 +1,14 @@
 {
-  "name": "pratica-3",
+  "name": "pratica-4",
   "version": "1.0.0",
-  "description": "Crud com restify.js",
+  "description": "Crud com restify.js e PostgreSQL",
   "main": "index.js",
   "scripts": {
-    "start": "node src/index.js",
-    "test": "Não há testes configurados"
+    "start": "node src/index.js"
   },
   "dependencies": {
-    "restify": "^8.5.1"
+    "restify": "^8.5.1",
+    "pg": "^8.11.5"
   },
   "author": "Lucas GES134",
   "license": "ISC"

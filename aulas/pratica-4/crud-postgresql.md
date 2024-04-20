@@ -1,3 +1,42 @@
+
+# Pratica 4 - CRUD com PostgreSQL e Restify.js
+
+Nesta prática adaptaremos nosso código para que agora possamos ter persistencia dos dados. Para isso utilizaremos o banco de dados PostgreSQL e a biblioteca pg para realizar a conexão com o banco de dados.
+
+Utilizaremos o framework Node.js Restify para criar um servidor e implementar os métodos HTTP através da biblioteca pg para persistência dos dados.
+
+Subiremos o middleware e o banco de dados utilizando o Docker Compose.
+
+
+## Documentação adicional
+
+-   [npm pg](https://www.npmjs.com/package/pg)
+
+
+## Package.json
+
+```json
+{
+  "name": "pratica-4",
+  "version": "1.0.0",
+  "description": "Crud com restify.js",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/index.js"
+  },
+  "dependencies": {
+    "restify": "^8.5.1",
+    "pg": "^8.11.5"
+  },
+  "author": "Lucas GES134",
+  "license": "ISC"
+}
+
+```
+
+## Código-fonte restify com pg
+
+```javascript
 const restify = require('restify');
 const { Pool } = require('pg');
 
@@ -138,3 +177,64 @@ server.listen(port, function() {
     console.log('Iniciando o banco de dados');
     initDatabase();
 });
+
+
+```
+
+## Código-fonte do Docker Compose
+    
+```yaml
+version: '3'
+services:
+
+  db:
+    image: postgres:latest
+    restart: always
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: alunos
+    ports:
+      - "5432:5432"
+    volumes:
+      - db_data:/var/lib/postgresql/data
+
+  backend:
+    build: .
+    restart: always
+    ports:
+      - "5000:5000"
+    depends_on:
+      - db
+    environment:
+      NODE_ENV: development
+      POSTGRES_USER: postgres
+      POSTGRES_HOST: db
+      POSTGRES_DB: alunos
+      POSTGRES_PASSWORD: password
+      POSTGRES_PORT: 5432
+
+volumes:
+  db_data:
+```
+
+## Código-fonte do arquivo docker_postgres_init.sql
+
+```sql
+CREATE TABLE alunos (
+  id SERIAL PRIMARY KEY,
+  nome VARCHAR(255) NOT NULL,
+  curso VARCHAR(255) NOT NULL,
+  data_nascimento VARCHAR(255) NOT NULL
+)
+```
+
+# Exercício proposto
+
+1. Atualize a aplicação entregue na pratica 3 para utilizar o postgreSQL.
+2. Utilize o exemplo passado em aula para iniciar o banco de dados corretamente.
+3. Assim como na ultima prática, execute os testes e exporte os resultados.
+4. Suba o print do docker com os resultados na pratica-4/img e subir a collection do postman em pratica-4/api-tests.
+
+
+[Voltar ao início](../../README.md)
