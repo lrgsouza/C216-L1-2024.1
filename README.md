@@ -17,8 +17,12 @@
 ## [Prática-4](./aulas/pratica-4/) - CRUD com postgreSQL
 - [CRUD PostgreSQL](./aulas/pratica-4/crud-postgresql.md)
 
+## [Prática-5](./aulas/pratica-5/) - Frontend com Flask
+- [Frontend Flask](./aulas/pratica-5/frontend-flask.md)
 # SERVICES
 ### [Backend](./backend/) - Backend API service
+
+### [Frontend](./frontend/) - Frontend service
 
 ## Documentações adicionais
 

@@ -14,7 +14,7 @@ services:
       - db_data:/var/lib/postgresql/data
 
   backend:
-    build: .
+    build: ./backend
     restart: always
     ports:
       - "5000:5000"
@@ -28,5 +28,15 @@ services:
       POSTGRES_PASSWORD: password
       POSTGRES_PORT: 5432
 
+  frontend:
+    build: ./frontend
+    restart: always
+    ports:
+      - "3000:3000"
+    depends_on:
+      - backend
+    environment:
+      API_BASE_URL: http://backend:5000/api/v1/aluno
+      API_DATABASE_RESET: http://backend:5000/api/v1/database/reset
 volumes:
   db_data:

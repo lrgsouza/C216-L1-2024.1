@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atualizar Aluno</title>
+</head>
+<body>
+    <h1>Atualizar Aluno</h1>
+    <form action="/atualizar/{{ aluno.id }}" method="POST">
+        <label for="nome">Nome:</label><br>
+        <input type="text" id="nome" name="nome" value="{{ aluno.nome }}"><br>
+        <label for="curso">Curso:</label><br>
+        <input type="text" id="curso" name="curso" value="{{ aluno.curso }}"><br>
+        <label for="data_nascimento">Data de Nascimento:</label><br>
+        <input type="text" id="data_nascimento" name="data_nascimento" value="{{ aluno.data_nascimento }}"><br><br>
+        <input type="submit" value="Atualizar">
+    </form>
+</body>
+</html>
