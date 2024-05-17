@@ -19,6 +19,9 @@
 
 ## [Prática-5](./aulas/pratica-5/) - Frontend com Flask
 - [Frontend Flask](./aulas/pratica-5/frontend-flask.md)
+
+## [Prática-6](./aulas/pratica-6/) - Estilização do Frontend com Bootstrap
+- [Bootstrap](./aulas/pratica-6/bootstrap.md)
 # SERVICES
 ### [Backend](./backend/) - Backend API service
 
@@ -35,3 +38,5 @@
 - [Download Postman](https://www.postman.com/downloads/)
 - [HTTP Methods](https://www.restapitutorial.com/lessons/httpmethods.html)
 - [Download Docker Desktop](https://www.docker.com/products/docker-desktop/)
+- [Flask](https://flask.palletsprojects.com/en/3.0.x/quickstart/'1)
+- [Bootstrap 5.3](https://getbootstrap.com/docs/5.3/getting-started/introduction/)
