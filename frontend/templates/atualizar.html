@@ -4,17 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Atualizar Aluno</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 <body>
-    <h1>Atualizar Aluno</h1>
-    <form action="/atualizar/{{ aluno.id }}" method="POST">
-        <label for="nome">Nome:</label><br>
-        <input type="text" id="nome" name="nome" value="{{ aluno.nome }}"><br>
-        <label for="curso">Curso:</label><br>
-        <input type="text" id="curso" name="curso" value="{{ aluno.curso }}"><br>
-        <label for="data_nascimento">Data de Nascimento:</label><br>
-        <input type="text" id="data_nascimento" name="data_nascimento" value="{{ aluno.data_nascimento }}"><br><br>
-        <input type="submit" value="Atualizar">
-    </form>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+        <a class="navbar-brand" href="#">Atualizar Aluno</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+            <a class="nav-link active" aria-current="page" href="/">Home</a>
+            <a class="nav-link" href="/inserir">Inserir Aluno</a>
+            <a class="nav-link" href="/listar">Listar Alunos</a>
+            </div>
+        </div>
+        </div>
+    </nav>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <div class="container-fluid">
+        <form action="/atualizar/{{ aluno.id }}" method="POST">
+            <label for="nome" class="form-label">Nome:</label><br>
+            <input type="text" id="nome" name="nome" value="{{ aluno.nome }}" class="form-control"><br>
+            <label for="curso" class="form-label">Curso:</label><br>
+            <input type="text" id="curso" name="curso" value="{{ aluno.curso }}" class="form-control"><br>
+            <label for="data_nascimento" class="form-label">Data de Nascimento:</label><br>
+            <input type="text" id="data_nascimento" name="data_nascimento" value="{{ aluno.data_nascimento }}" class="form-control"><br><br>
+            <input type="submit" value="Atualizar" class="btn btn-primary">
+        </form>
+    </div>
+
 </body>
 </html>
